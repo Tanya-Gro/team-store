@@ -12,10 +12,7 @@ export default defineConfig([
     languageOptions: { ecmaVersion: 2022, globals: globals.browser },
     rules: {
       "no-console": ["warn", { allow: ["warn", "error"] }],
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        { argsIgnorePattern: "^_" },
-      ],
+      "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
       "@typescript-eslint/no-explicit-any": "error",
       eqeqeq: ["error", "always"],
       "prefer-const": "error",
