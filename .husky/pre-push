@@ -1,0 +1,2 @@
+echo 'Run tests...'
+npm run test
