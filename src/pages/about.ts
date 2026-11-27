@@ -1,3 +1,4 @@
+import "../styles/about.css";
 export function renderAboutPage(): HTMLElement {
   const section = document.createElement("section");
   section.className = "container";

@@ -1,8 +1,9 @@
-import "./style.css";
+import "./styles/base.css";
+import { createSnowfall, renderAboutPage } from "./pages/about";
+const app = document.querySelector<HTMLDivElement>("#app");
 
-document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-  <div>
-    <h1>Gift shop</h1>
-    <p>About us page</p>
-  </div>
-`;
+if (app) {
+  app.replaceChildren(renderAboutPage());
+}
+
+document.body.appendChild(createSnowfall());
